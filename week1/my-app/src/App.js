@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <input type="checkbox" />
+//       <p>Finish fsw-115 homework.</p>
 
-export default App;
+//       <input type="checkbox" />
+//       <p>Finish fsw-120 homework.</p>
+
+//       <input type="checkbox" />
+//       <p>Have dinner with friends.</p>
+
+//       <input type="checkbox" />
+//       <p>Hangout with girlfriend.</p>
+//     </div>
+//   );
+// }
+
+// export default App;
