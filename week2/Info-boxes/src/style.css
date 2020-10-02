@@ -1,0 +1,6 @@
+.boxes {
+    border: solid 0.2em;
+    gap: 0.2em;
+    color: purple;
+    max-width: 50%;
+}
