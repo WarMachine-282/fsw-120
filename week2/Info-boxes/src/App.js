@@ -6,18 +6,18 @@ import Boxes from "./components/Boxes"
 const App = () => {
     return (
         <div> 
-            <Boxes style={{backgroundColor:"blue"}}
+            <Boxes 
                 title="A Day in the Life"
                 subtitle="From: 'Sgt. Pepper's Lonely Hearts Club Band' (1967)"
                 information="Lennon and McCartney hadn't really written a song together since they started composing separately around the time of the Help! sessions. 'A Day in the Life' was the closest they got during their final stages."
             />
             <Boxes 
-                // bgColor= "red"
+            
                 title="Strawberry Fields Forever"
                 subtitle="From: 1967 single"
                 information="The Beatles were in the middle of their most ambitious period when they recorded 'Strawberry Fields Forever' and 'Penny Lane,' a pair of nostalgic songs about growing up in Liverpool"
             />
-            <Boxes bgColor="red" 
+            <Boxes
                 title="Abbey Road"
                 subtitle="From: 'Abbey Road' (1969)"
                 information="The 16-minute suite that takes up the majority of side two of the last album the Beatles recorded together is made up of eight songs, most of them written and arranged by McCartney."
