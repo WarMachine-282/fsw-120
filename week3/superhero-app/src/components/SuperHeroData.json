@@ -1,0 +1,45 @@
+[
+    {
+        
+        "name": "Homelander",
+        "show": "The Boys",
+        "catchPhrase": "I'm the Homelander, and I can do whatever the f*** I want.",
+        "imageName": "https://static.wikia.nocookie.net/amazons-the-boys/images/c/c3/TheSeven-Homelander.png/revision/latest/scale-to-width-down/175?cb=20200908000201"
+    },
+    {
+        "name": "Black Noir",
+        "show": "The Boys",
+        "catchPhrase": "........",
+        "imageName": "https://static.wikia.nocookie.net/amazons-the-boys/images/1/1e/TheSeven-BlackNoir.png/revision/latest/scale-to-width-down/175?cb=20200908000602"
+    },
+    {
+        "name": "Queen Maeve",
+        "show": "The Boys",
+        "catchPhrase": "The Only Thing I Hate More Than Blubbering People Are Boring Speeches",
+        "imageName": "https://static.wikia.nocookie.net/amazons-the-boys/images/5/58/TheSeven-QueenMaeve.png/revision/latest/scale-to-width-down/175?cb=20200908000534"
+    },
+    {
+        "name": "The Deep",
+        "show": "The Boys",
+        "catchPhrase": "Oh, wow, what a surprise. A water crime. They only call me when there's trouble at a dock. Or a river or a lake, a canal. A jetty.!",
+        "imageName": "https://static.wikia.nocookie.net/amazons-the-boys/images/b/b3/TheSeven-TheDeep.png/revision/latest/scale-to-width-down/175?cb=20200908000355"
+    },
+    {
+        "name": "A-Train",
+        "show": "The Boys",
+        "catchPhrase": "Can't stop the A-Train!",
+        "imageName": "https://static.wikia.nocookie.net/amazons-the-boys/images/d/d7/TheSeven-A-Train.png/revision/latest/scale-to-width-down/175?cb=20200908000632"
+    },
+    {
+        "name": "Starlight",
+        "show": "The Boys",
+        "catchPhrase": "Since when did 'hopeful' and 'naive' become the same thing? I mean, why would you get into this business if not to save the world? That's all I have ever wanted. And that's why I have always wanted to be in The Seven.",
+        "imageName": "https://static.wikia.nocookie.net/amazons-the-boys/images/7/78/TheSeven-Starlight.png/revision/latest/scale-to-width-down/175?cb=20200908000700"
+    },
+    {
+        "name": "Stormfront",
+        "show": "The Boys",
+        "catchPhrase": "Life isn’t actually a PR strategy. You can say what you think.",
+        "imageName": "https://static.wikia.nocookie.net/amazons-the-boys/images/5/5a/TheSeven-Stormfront.png/revision/latest/scale-to-width-down/175?cb=20200908000732"
+    }
+]
