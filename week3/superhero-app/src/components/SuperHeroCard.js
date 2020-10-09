@@ -8,9 +8,9 @@ let SuperHeroData = (props) => {
   return (
     <div className="superHeroBoxes">
       <div onClick={phrase}>
-        <img className="propImage" src={props.imageName} />
         <p className="propName">{props.name}</p>
-        <p className="propShow">Show: {props.show}</p>
+        <img className="propImage" src={props.imageName} />
+        <span className="propShow">{props.show}</span>
       </div>
     </div>
   );

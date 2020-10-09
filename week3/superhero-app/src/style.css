@@ -1,7 +1,13 @@
+body {
+    margin: 0;
+    background-image: url(https://vignette.wikia.nocookie.net/amazons-the-boys/images/5/50/Wiki-background/revision/latest?cb=20190726141349);
+    background-size: 100% auto;
+  }
 .superHeroBoxes  {
   display: inline-block;
+  align-content: center;
   margin-left: 5em;
-  margin-top: 5em;
+  margin-top: 1em;
   width: 100px;
   height: 100px;
   padding: 5px;
@@ -12,22 +18,39 @@ img {
 }
 p {
     background-color: silver;
+    border: solid 15px silver;
     font-size: 15px;
     text-align: center;
+    font-weight: 800;
+    font-family: 'Permanent Marker', cursive;
+    margin-right: 5em;
+}
+span {
+    background-color: silver;
+    /* border: solid 15px silver; */
+    font-size: 10px;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 5em;
+}
+.propName{
+    /* margin-left: 5em; */
+    width: 150px;
 }
 .propImage {
     display: inline-block;
 }
-body {
-  margin: 0;
-  background-image: url(https://vignette.wikia.nocookie.net/amazons-the-boys/images/5/50/Wiki-background/revision/latest?cb=20190726141349);
-  background-size: 100% auto;
+.propShow {
+    width: 150px;
 }
+
 .header {
   color: black;
   font-weight: 800;
   font-family: 'Permanent Marker', cursive;
   font-size: 80px;
   text-align: center;
-  margin-top: 70px;
+  padding-top: 80px;
+  /* margin-top: 70px; */
 }
