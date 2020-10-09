@@ -1,7 +1,7 @@
 import React from "react";
 import SuperHeroData from "./components/SuperHeroData.json";
 import SuperHeroCard from "./components/SuperHeroCard";
-import './style.css';
+import "./style.css";
 
 class App extends React.Component {
   state = {
