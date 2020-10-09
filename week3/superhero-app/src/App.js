@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SuperHeroData from "./components/SuperHeroData.json";
+import SuperHeroCard from "./components/SuperHeroCard";
+import './style.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    theSeven: SuperHeroData,
+  };
+  render() {
+    return (
+      <div>
+        <h1 className="header">The Seven</h1>
+        {this.state.theSeven.map((Heroes) => {
+          return (
+            <SuperHeroCard
+              key={Heroes.name}
+              name={Heroes.name}
+              show={Heroes.show}
+              catchPhrase={Heroes.catchPhrase}
+              imageName={Heroes.imageName}
+            />
+          );
+        })}
+      </div>
+    );
+  }
 }
 
 export default App;

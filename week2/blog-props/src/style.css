@@ -1,6 +1,7 @@
 body {
     margin: 0px;
 }
+/*  */
 h1 {
     color: #fff;
     font-weight: 800;
@@ -28,7 +29,6 @@ a {
     font-weight: 800;
     font-size: 12px;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    margin-left: 2.5em;
     padding-right: 2.5em ;
     letter-spacing: 1px;
     margin-top: 2em;

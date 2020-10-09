@@ -1,0 +1,33 @@
+.superHeroBoxes  {
+  display: inline-block;
+  margin-left: 5em;
+  margin-top: 5em;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+img {
+    border-radius: 1em;
+    border: solid 5px silver;
+}
+p {
+    background-color: silver;
+    font-size: 15px;
+    text-align: center;
+}
+.propImage {
+    display: inline-block;
+}
+body {
+  margin: 0;
+  background-image: url(https://vignette.wikia.nocookie.net/amazons-the-boys/images/5/50/Wiki-background/revision/latest?cb=20190726141349);
+  background-size: 100% auto;
+}
+.header {
+  color: black;
+  font-weight: 800;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 70px;
+}
