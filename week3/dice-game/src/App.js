@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import DiceBox from "./components/DiceBox.js ";
+import DiceBox from "./components/DiceBox";
 import "./style.css";
 
 class App extends Component {
