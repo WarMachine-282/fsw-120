@@ -1,0 +1,18 @@
+.DiceBox{
+    margin-top: 2%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.DiceBox > p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+}
+.button {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 auto;
+    display: block;
+}
