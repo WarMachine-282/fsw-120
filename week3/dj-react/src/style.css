@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1589793363686-10ec299b6fca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1009&q=80);
+    background-size: 100% auto;
+  }
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    grid-gap: 10px;
+  }
+.squares {
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+    height: 300px;
+    width: 75%;
+}
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  .button1 {
+    margin-right: 15px;
+    height: 30px;
+    width: 80px;
+    font-size: 10px;
+  }
+  .button2 {
+    margin-right: 15px;
+    height: 30px;
+    width: 80px;
+    font-size: 10px;
+  }
+  
+  .button3 {
+    margin-right: 15px;
+    height: 30px;
+    width: 80px;
+    font-size: 10px;
+  }
+  
+  .button4 {
+    margin-right: 15px;
+    height: 30px;
+    width: 80px;
+    font-size: 10px;
+  }
