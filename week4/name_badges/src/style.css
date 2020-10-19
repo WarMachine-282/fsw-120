@@ -1,0 +1,67 @@
+#nameForm {
+  width: 96.5%;
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+.align {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+h2 {
+  background-color: rgb(94, 94, 94);
+  color: white;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-left: 10px;
+  height: 38px;
+  width: 100%;
+}
+.badge {
+  width: 100;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.badgeInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+#name {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: left;
+}
+#phone {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  text-align: left;
+}
+#origin {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: left;
+}
+#food {
+  grid-column: 4/5;
+  grid-row: 2/30;
+  text-align: left;
+}
+#email {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  text-align: left;
+}
+#bioBox {
+  height: 75px;
+  width: 75%;
+  margin-left: 110px;
+  border: 1px solid black;
+  text-align: left;
+}
