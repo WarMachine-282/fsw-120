@@ -114,6 +114,7 @@ class App extends Component {
             onChange={this.handleChange}
             placeholder="Tell us about yourself"
           ></textarea>
+          <br></br>
           <button disabled={!input} onClick={this.formUpdate}>
             Submit
           </button>

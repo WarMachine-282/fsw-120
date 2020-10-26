@@ -1,6 +1,6 @@
 #nameForm {
   width: 96.5%;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 15px;
   margin-bottom: 25px;
   text-align: center;
@@ -13,25 +13,31 @@
 }
 h2 {
   background-color: rgb(94, 94, 94);
+  border: 2px solid rgb(94, 94, 94);
   color: white;
   border-radius: 10px;
   text-align: left;
   margin-top: 0px;
   padding-top: 5px;
   padding-left: 10px;
-  height: 38px;
-  width: 100%;
+  /* padding-right: 2px; */
+  height: 40px;
+  width: 99.3%;
 }
 .badge {
-  width: 100;
+  width: 98.5%;
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 10px;
 }
 .badgeInfo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+}
+input {
+  margin-top: 2%;
+  border: 2px solid black;
 }
 #name {
   grid-column: 2/3;
