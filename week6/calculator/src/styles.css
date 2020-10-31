@@ -1,0 +1,83 @@
+.align {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+}
+/* .image {
+  background-image: url(https://miro.medium.com/max/551/1*xQJpOMfr-i3MFFzfYDPEOA.png);
+  position: relative;
+  grid-column: 4/6;
+  grid-row: 2;
+  height: 450px;
+  width: 450px;
+} */
+#firstNum {
+  height: 40px;
+  width: 95px;
+  margin: 2px;
+}
+
+#secondNum {
+  height: 40px;
+  width: 95px;
+  margin: 2px;
+}
+.inputs {
+  grid-column: 4/6;
+  grid-row: 3;
+  margin-left: 55px;
+  margin-top: 30px;
+}
+.buttons {
+  margin-left: 55px;
+  grid-column: 4/6;
+  grid-row: 4;
+}
+h1 {
+  grid-column: 4/6;
+  grid-row: 2;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 143);
+}
+#addition {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(122, 120, 120);
+  color: aliceblue;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+}
+#subtraction {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(122, 120, 120);
+  color: aliceblue;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+}
+#multiplication {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(122, 120, 120);
+  color: aliceblue;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+}
+#division {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(122, 120, 120);
+  color: aliceblue;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+}
+#clear {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(122, 120, 120);
+  color: aliceblue;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+
+}
