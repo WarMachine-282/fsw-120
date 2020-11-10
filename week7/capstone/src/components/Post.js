@@ -1,11 +1,13 @@
 import React, { forwardRef } from "react";
 import "./Post.css";
+// import Feed from "./Feed"
 import { Avatar } from "@material-ui/core";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const Post = forwardRef(
   ({ displayName, username, verified, text, image, avatar }, ref) => {
@@ -34,6 +36,7 @@ const Post = forwardRef(
               <RepeatIcon fontSize="small" />
               <FavoriteBorderIcon fontSize="small" />
               <PublishIcon fontSize="small" />
+              {/* <DeleteIcon onClick={deleteTweet} fontSize="small" /> */}
             </div>
           </div>
         </div>

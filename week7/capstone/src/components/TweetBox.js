@@ -16,16 +16,11 @@ const TweetBox = (props) => {
       username: "Christi36065557",
       verified: true,
       text: tweetMessage,
-      image: tweetImage
+      image: tweetImage,
     };
-    const message = props.tweetData
-    message.push(newTweet)
-    props.setTweetData(message)
-    setTimeout(() => {
-      props.setTweetData(props.tweetData)
-    },1)
-    setTweetMessage("")
-    setTweetImage("")
+    props.setTweetData(newTweet);
+    setTweetMessage("");
+    setTweetImage("");
   };
   return (
     <div className="tweetBox">

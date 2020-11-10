@@ -8,9 +8,15 @@ import FlipMove from "react-flip-move";
 const Feed = () => {
   const [posts, setPosts] = useState(data.TweetData);
 
-  const addNewTweet = TweetBox => {
-    setPosts([TweetBox, ...posts]);
+  const createTweet = (data) => {
+    console.log(posts);
+    setPosts([...posts, data]);
+    console.log(posts);
   };
+
+  // const deleteTweet = (post) => {
+  //   setPosts(data.filter((postItem) => postItem.text !== post.text));
+  // };
 
   const tweets = posts.map((post) => (
     <Post
@@ -28,7 +34,7 @@ const Feed = () => {
       <div className="feed-header">
         <h2>Home</h2>
       </div>
-      <TweetBox tweetData={posts} setTweetData={setPosts} />
+      <TweetBox tweetData={posts} setTweetData={createTweet} />
       <FlipMove>{tweets}</FlipMove>
     </div>
   );
