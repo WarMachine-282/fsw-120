@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+.post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background);
+  padding-bottom: 10px;
+}
+.post-avatar {
+  padding: 20px;
+}
+.post-body {
+  flex: 1;
+  padding: 10px;
+}
+.post-body,
+img {
+  border-radius: 20px;
+  width: 480px;
+  
+}
+.post-header-text > h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.post-headerSpecial {
+  font-weight: 600;
+  font-size: 12px;
+  color: gray;
+}
+.post-badge {
+  font-size: 14px !important;
+  color: var(--twitter-color);
+}
+.post-header-description {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}

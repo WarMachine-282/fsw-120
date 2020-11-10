@@ -4,11 +4,11 @@ import CalculatorKey from "./CalculatorKey";
 import "./Calculator.css";
 
 function Calculator() {
-  const [prevValue, setPrevValue] = useState(null);
-  const [nextValue, setNextValue] = useState("0");
+  const [num1, setnum1] = useState(null);
+  const [num2, setnum2] = useState("0");
   const [op, setOp] = useState(null);
 
-  useEffect(() => {}, [op, nextValue, prevValue]);
+  useEffect(() => {}, [op, num2, num1]);
 
   const CalculatorOperations = {
     "/": (firstValue, secondValue) => firstValue / secondValue,
@@ -20,50 +20,50 @@ function Calculator() {
 
   const performOperation = () => {
     let temp = CalculatorOperations[op](
-      parseFloat(prevValue),
-      parseFloat(nextValue)
+      parseFloat(num1),
+      parseFloat(num2)
     );
     setOp(null);
-    setNextValue(String(temp));
-    setPrevValue(null);
+    setnum2(String(temp));
+    setnum1(null);
   };
 
   const handleNum = (number) => {
-    setNextValue(nextValue === "0" ? String(number) : nextValue + number);
+    setnum2(num2 === "0" ? String(number) : num2 + number);
   };
 
   const insertDot = () => {
-    if (!/\./.test(nextValue)) {
-      setNextValue(nextValue + ".");
+    if (!/\./.test(num2)) {
+      setnum2(num2 + ".");
     }
   };
   const percentage = () => {
-    setNextValue(parseFloat(nextValue) / 100);
-    if (prevValue && nextValue === "") {
-      setPrevValue(parseFloat(prevValue) / 100);
+    setnum2(parseFloat(num2) / 100);
+    if (num1 && num2 === "") {
+      setnum1(parseFloat(num1) / 100);
     }
   };
   const changeSign = () => {
-    setNextValue(parseFloat(nextValue) * -1);
+    setnum2(parseFloat(num2) * -1);
   };
   const clearData = () => {
-    setNextValue("0");
-    setPrevValue(0);
+    setnum2("0");
+    setnum1(0);
   };
 
-  const handleOperation = (value) => {
+  const Operation = (value) => {
     if (Number.isInteger(value)) {
       handleNum(parseInt(value, 10));
     } else if (value in CalculatorOperations) {
       if (op === null) {
         setOp(value);
-        setPrevValue(nextValue);
-        setNextValue("");
+        setnum1(num2);
+        setnum2("");
       }
       if (op) {
         setOp(value);
       }
-      if (prevValue && op && nextValue) {
+      if (num1 && op && num2) {
         performOperation();
       }
     } else if (value === "c") {
@@ -80,40 +80,40 @@ function Calculator() {
   return (
     <div className="calculator">
       <div className="calculator-input">
-        <div className="result">{nextValue} </div>
+        <div className="result">{num2} </div>
       </div>
       <div className="calculator-keypad">
         <div className="keys-function">
-          <CalculatorKey keyValue={"c"} onClick={handleOperation} />
-          <CalculatorKey keyValue={"\xB1"} onClick={handleOperation} />
-          <CalculatorKey keyValue={"%"} onClick={handleOperation} />
+          <CalculatorKey keyValue={"c"} onClick={Operation} />
+          <CalculatorKey keyValue={"\xB1"} onClick={Operation} />
+          <CalculatorKey keyValue={"%"} onClick={Operation} />
         </div>
         <div className="keys-operators">
-          <CalculatorKey keyValue={"+"} onClick={handleOperation} />
-          <CalculatorKey keyValue={"-"} onClick={handleOperation} />
-          <CalculatorKey keyValue={"*"} onClick={handleOperation} />
-          <CalculatorKey keyValue={"/"} onClick={handleOperation} />
-          <CalculatorKey keyValue={"="} onClick={handleOperation} />
+          <CalculatorKey keyValue={"+"} onClick={Operation} />
+          <CalculatorKey keyValue={"-"} onClick={Operation} />
+          <CalculatorKey keyValue={"*"} onClick={Operation} />
+          <CalculatorKey keyValue={"/"} onClick={Operation} />
+          <CalculatorKey keyValue={"="} onClick={Operation} />
         </div>
         <div className="keys-numbers">
-          <CalculatorKey keyValue={9} onClick={handleOperation} />
-          <CalculatorKey keyValue={8} onClick={handleOperation} />
-          <CalculatorKey keyValue={7} onClick={handleOperation} />
-          <CalculatorKey keyValue={6} onClick={handleOperation} />
-          <CalculatorKey keyValue={5} onClick={handleOperation} />
-          <CalculatorKey keyValue={4} onClick={handleOperation} />
-          <CalculatorKey keyValue={3} onClick={handleOperation} />
-          <CalculatorKey keyValue={2} onClick={handleOperation} />
-          <CalculatorKey keyValue={1} onClick={handleOperation} />
+          <CalculatorKey keyValue={9} onClick={Operation} />
+          <CalculatorKey keyValue={8} onClick={Operation} />
+          <CalculatorKey keyValue={7} onClick={Operation} />
+          <CalculatorKey keyValue={6} onClick={Operation} />
+          <CalculatorKey keyValue={5} onClick={Operation} />
+          <CalculatorKey keyValue={4} onClick={Operation} />
+          <CalculatorKey keyValue={3} onClick={Operation} />
+          <CalculatorKey keyValue={2} onClick={Operation} />
+          <CalculatorKey keyValue={1} onClick={Operation} />
           <CalculatorKey
             className="key-dot"
             keyValue={"."}
-            onClick={handleOperation}
+            onClick={Operation}
           />
           <CalculatorKey
             className="key-zero"
             keyValue={0}
-            onClick={handleOperation}
+            onClick={Operation}
           />
         </div>
       </div>

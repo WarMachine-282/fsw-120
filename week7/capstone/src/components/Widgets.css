@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+.widgets {
+  flex: 0.3;
+}
+.widgets-input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.widgets-input > input {
+  border: none;
+  background-color: var(--twitter-background);
+}
+.widgets-searchIcon {
+  color: gray;
+}
+.widgets-widgetContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+.widgets-widgetContainer > h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+@media all and (max-width: 600px) {
+  .widgets {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.sidebarOption:hover {
+  background-color: #e8f5fe;
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+.sidebarOption > .MuiSvgIcon-root {
+  padding: 20px;
+}
+.sidebarOption > h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.SidebarOption--active {
+  color: var(--twitter-color);
+}
+@media all and (max-width: 600px) {
+  .hide-non-active {
+    display: none;
+  }
+}

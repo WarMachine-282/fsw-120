@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+.feed {
+  flex: 0.4;
+  border-right: 1px solid var(--twitter-background);
+  min-width: fit-content;
+  overflow-y: none;
+}
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.feed-header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 15px 20px;
+}
+.feed-header > h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
