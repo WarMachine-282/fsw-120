@@ -13,12 +13,12 @@ const Feed = () => {
     setPosts([...posts, data]);
     console.log(posts);
   };
-
+  
   const deleteTweet = (post) => {
     setPosts(posts.filter((postItem) => {
       console.log(postItem)
       console.log("delete", post);
-      return postItem.text !== post.props.text})); //hey logan you were right. (look at me) you needed to add props.
+      return postItem.text !== post.props.text}));
   };
   const editTweet = (post) => {
     setPosts(posts.map((postItem) => {
