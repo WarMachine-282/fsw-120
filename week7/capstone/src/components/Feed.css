@@ -30,3 +30,12 @@ textarea:focus,
 select:focus {
   outline: none;
 }
+@media only screen and (max-width: 320px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 940px) {
+  
+}

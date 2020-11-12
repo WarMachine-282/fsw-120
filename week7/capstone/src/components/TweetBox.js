@@ -9,6 +9,7 @@ const TweetBox = (props) => {
 
   const sendTweet = (e) => {
     e.preventDefault();
+    
     const newTweet = {
       avatar:
         "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/101798755_10213338663739364_9137961428148289536_o.jpg?_nc_cat=106&ccb=2&_nc_sid=09cbfe&_nc_ohc=J8tDjra3cCcAX9GTMV9&_nc_ht=scontent-sjc3-1.xx&oh=e33eca0e0f9c203efd02e80ba69d2d6a&oe=5FCCAE7A",

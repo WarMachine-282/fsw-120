@@ -30,8 +30,14 @@
   font-size: 18px;
   font-weight: 800;
 }
-@media all and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
+  
+}
+@media only screen and (max-width: 768px) {
   .widgets {
     display: none;
-  }
+  } 
+}
+@media only screen and (max-width: 940px) {
+  
 }
